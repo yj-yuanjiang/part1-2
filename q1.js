@@ -26,3 +26,12 @@ numbers = numbers.concat(newNumbers);
 numbers.sort((a, b) => a - b);
 
 console.log(numbers);
+
+
+// Q1.4 Remove two numbers 8 and 31 from the array generated in Q1.3
+// and keep the new array in ascending order
+
+// Remove both 8 and 31 using filter
+numbers = numbers.filter(num => num !== 8 && num !== 31);
+
+console.log(numbers);
