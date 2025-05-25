@@ -34,4 +34,37 @@ console.log(numbers);
 // Remove both 8 and 31 using filter
 numbers = numbers.filter(num => num !== 8 && num !== 31);
 
-console.log(numbers);
+console.log(numbers);// Q2.1 Build an object called “myMovie” with the following properties and data: Title: The longest day, Year: 1964
+// Create a movie object to store movie details
+
+let myMovie = {
+  title: "The longest day", // Movie title
+  year: 1964 // Movie release year
+};
+
+//Print the object to the console to verify the properties and values
+console.log(myMovie);
+
+// Q2.2 Add the following properties and data to the “myMovie” object: rating: 5, Summary: World War II movie about the Normandy landings
+myMovie.rating = 5; //Movie rating
+
+// Add a summary property to the movie object
+myMovie.summary = "World War II movie about the Normandy landings"; //Movie summary
+
+console.log(myMovie);
+
+// Q2.3 Change the data of the properties listed below: Rating: 4, Year: 1962
+// Update rating to 4
+myMovie.rating = 4; 
+
+// Update year to 1962
+myMovie.year =1962;
+
+console.log(myMovie);
+
+// Note: Although the task mentions "Year: 1964", it refers to the original state.
+// We do NOT need to change the year back to 1964 — just remove the Summary.
+// Delete the summary property as it's no longer needed
+delete myMovie.summary;
+
+console.log(myMovie);
