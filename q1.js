@@ -13,3 +13,16 @@ console.log(numbers);
 numbers.sort((a, b) => a - b);
 
 console.log(numbers);
+
+// Q1.3 Insert three numbers 19, 23, 30 into the sorted array above, and keep the new array in ascending order
+
+// Numbers to insert into the Q1.2 array
+let newNumbers = [19, 23, 30];
+
+// Merge the new numbers into the Q1.2 array
+numbers = numbers.concat(newNumbers);
+
+// Sort the merged array again to keep it in ascending order
+numbers.sort((a, b) => a - b);
+
+console.log(numbers);
