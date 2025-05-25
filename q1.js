@@ -35,3 +35,32 @@ console.log(numbers);
 numbers = numbers.filter(num => num !== 8 && num !== 31);
 
 console.log(numbers);
+// Q1.5 Implement the function “sequentialSearch” as per part 5 of the task description
+
+/**
+ * Performs a sequential search to find the index of a target value in an array.
+ * @param {number[]} array - The array to search.
+ * @param {number} target - The value to search for.
+ * @returns {number} The index of the target if found, otherwise -1.
+ */
+function sequentialSearch(array, target) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === target) {
+      return i; // return the index the target is found
+    }
+  }
+  return -1; // return -1 if the target is not found
+}
+
+// Test 1: Target is found
+let target1 = 16;
+let result1 = sequentialSearch(numbers, target1);
+
+console.log("Search result for", target1, "is index:", result1);
+
+// Test 2: Target is NOT found
+let target2 = 99;
+let result2 = sequentialSearch(numbers, target2);
+
+console.log("Search result for", target2, "is index:", result2);
+
